@@ -18,12 +18,13 @@
 
 #### 진행 절차
  > <Strong> 1. Meilisearch의 이해 (API가 어떻게 검색을 하는지, API의 Tokenizer가 어떤 방식으로 토큰화 하는지 등)</Strong>
- > <Strong> 2. Meilisearch에서의 도메인 단어 사전 활용 방안 구상</Strong>
- > <Strong> 3. Meilisearch의 검색 엔진 방식을 기반으로 하는 해결방안 구상</Strong>
- > <Strong> 4. Meilisearch의 검색 엔진에 입력 되기 전의 데이터의 해결방안 구상</Strong>
+
+##### 참고 사항
+ > <Strong> 1. Meilisearch의 형태소 분석기 : Charabia -> Charabia의 일본어 specialized segmentation : lindera (Rust 기반의 형태소 분석기)</Strong>
+ > <Strong> 2. mecab에 도메인 단어 사전으로 구축한 형태소 사전 추가 가능</Strong>
 
 ## 2. EDA
-
+ --
 
 ## 3. 문제 해결 방법 탐색 및 전략 수립
 
