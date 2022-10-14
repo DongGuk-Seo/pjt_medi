@@ -1,5 +1,5 @@
 import meilisearch
 
-client = meilisearch.Client('http://127.0.0.1:7700', 'masterKey')
+client = meilisearch.Client('http://35.216.64.12:7700/', 'team10')
 
 client.index(input()).delete()

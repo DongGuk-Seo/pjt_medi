@@ -12,10 +12,10 @@ index = client.index(category)
 
 client.create_index(f'{category}', {'primaryKey':f'{PK}'})
 
-json_file = open(f'data/{category}/{dataname}.json',encoding='utf-8')
+json_file = open(f'/Users/krc/Desktop/etc/pjt_medi/data/products/{dataname}.json',encoding='utf-8')
 documents = json.load(json_file)
 
-if category[:7] == 'product':
+if category == 'products':
     # Remove dict type -> Json in Json 
     # "$date"
     date_list = ['date_created','date_updated','date_sale_from','date_sale_to',]
