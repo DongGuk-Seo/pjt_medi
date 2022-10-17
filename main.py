@@ -7,9 +7,6 @@ dataname = input('Input Dataname : \n')
 category = input('Input Category : \n')
 PK = input('Input primary-key : \n')
 
-# An index is where the documents are stored.
-index = client.index(category)
-
 client.create_index(f'{category}', {'primaryKey':f'{PK}'})
 
 json_file = open(f'/Users/krc/Desktop/etc/pjt_medi/data/products/{dataname}.json',encoding='utf-8')
@@ -54,6 +51,9 @@ elif category == 'crawling_data':
 elif category == 'articles':
     for i in range(len(documents)):
         documents[i]['CONTENT'] = re.sub('&[a-z]*;|nbsp|<[^>]+>|lsquo|rsquo|rdquo|ldquo|;',' ',documents[i]['CONTENT'])
+# An index is where the documents are stored.
+index = client.index(category)
+
 # Add documents
 index.add_documents(documents) # => { "uid": 0 }
 
