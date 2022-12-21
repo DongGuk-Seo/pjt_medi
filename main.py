@@ -1,8 +1,12 @@
 import meilisearch
 import json
 import re
+import os
 
-client = meilisearch.Client('http://localhost:7700', 'masterKey')
+with open('./key.txt','r') as f:
+    key = f.read()
+
+client = meilisearch.Client(os.environ['MEILI_URL'], key)
 dataname = input('Input Dataname : \n')
 category = input('Input Category : \n')
 PK = input('Input primary-key : \n')

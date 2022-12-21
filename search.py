@@ -1,6 +1,7 @@
 import meilisearch
+import os
 
-client = meilisearch.Client('http://35.216.64.12:7700', '')
+client = meilisearch.Client(os.environ['MEILI_URL'], '')
 
 index_num = int(input('Choose index : \n 1. product_all \n 2. crawling_data \n  : '))
 indexes = ['product_all','crawling_data']
