@@ -63,9 +63,9 @@
 ## 3. 전략 수립
 
 #### Baseline
-##### 1) Lindera의 Mecab 단어사전에 Build된 단어사전 적용
-##### 2) Charabia내 한국어용 Tokenizer Build(Lindera 사용)
-##### 3) 개선한 라이브러리를 연결한 검색엔진 Build
+##### 1) Lindera의 Mecab 단어사전에 도메인 단어사전 적용
+##### 2) Charabia내 한국어용 Tokenizer 제작(Lindera 기반)
+##### 3) 수정한 라이브러리를 연결한 검색엔진 Build
 
 <br>
 
@@ -80,7 +80,7 @@
 ##### 1) Lindera의 단어사전 구축 및 적용
 ![Lindera](https://user-images.githubusercontent.com/94242504/208913170-50dddd15-0da1-4202-812d-03b8a3b61d9d.jpg)
 
-##### 2) Charabia의 한국어 Tokenizer 파일 생성 및 빌드
+##### 2) Charabia의 한국어 Tokenizer 파일 제작
 ![charabia](https://user-images.githubusercontent.com/94242504/208912985-c2912ee6-29ab-4a16-a763-a6536a19493e.jpg)
 
 ##### 3) 적용한 라이브러리 간 Build
